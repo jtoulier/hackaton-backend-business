@@ -6,11 +6,7 @@ import com.hackaton.business.backend.business.CustomerService;
 import com.hackaton.business.backend.expose.creditLineDTO.CreditLineResponse;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerRequest;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerResponse;
-import com.hackaton.business.backend.repository.entity.CreditLine;
 import io.reactivex.*;
-import io.reactivex.Maybe;
-import io.reactivex.Maybe;
-import io.reactivex.Maybe;
 import io.reactivex.Maybe;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -40,7 +36,7 @@ public class CustomerController {
         return this.customerService.login(checkCustomerRequest);
     }
 
-    @GetMapping(value = "/customer/credit-line/{dni}",
+    @GetMapping(value = "/credit-line/{dni}",
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_STREAM_JSON_VALUE})
     @ResponseStatus(HttpStatus.OK)
     public Single<CreditLineResponse> findCreditLineByDni(@PathVariable(value = "dni") String dni) {
