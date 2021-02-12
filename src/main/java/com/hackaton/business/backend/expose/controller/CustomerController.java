@@ -7,7 +7,6 @@ import com.hackaton.business.backend.business.VirtualCardService;
 import com.hackaton.business.backend.expose.creditLineDTO.CreditLineResponse;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerRequest;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerResponse;
-import com.hackaton.business.backend.expose.virtualCardDTO.VirtualCardResponse;
 import com.hackaton.business.backend.expose.virtualCardDTO.VirtualCardSavedResquest;
 import io.reactivex.*;
 import io.reactivex.Maybe;
