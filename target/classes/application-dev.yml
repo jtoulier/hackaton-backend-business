@@ -1,0 +1,16 @@
+application:
+  errors:
+    TECHNICAL_ERROR:
+      code: "ERROR-001"
+      message: "Technical Error"
+    FIELDS_VALIDATION_ERROR:
+      code: "ERROR-002"
+      message: "Fields Error"
+    CREDIT_LINE_NOT_FOUND:
+      code: "ERROR-003"
+      message: "Credit line not found"
+  datasource:
+    url: jdbc:sqlserver://serverhackaton01.database.windows.net:1433;database=hackatondb;sendStringParametersAsUnicode=false;
+    username: hackaton
+    password: Bootcamp2021
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
