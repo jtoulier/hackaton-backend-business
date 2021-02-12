@@ -16,7 +16,7 @@ application:
       code: "ERROR-005"
       message: "Customer's credit line is not enough"
   datasource:
-    url: jdbc:sqlserver://serverhackaton01.database.windows.net:1433;database=hackatondb;sendStringParametersAsUnicode=false;
+    url: jdbc:sqlserver://serverhackaton01.database.windows.net:1433;database=hackatondb;sendStringParametersAsUnicode=false
     username: hackaton
     password: Bootcamp2021
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver

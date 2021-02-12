@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hackaton-business-backend
+    name: hackaton-backend-business
   profiles:
     active: dev
 
