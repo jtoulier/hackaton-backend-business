@@ -3,9 +3,7 @@ package com.hackaton.business.backend.business.impl;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerRequest;
 import com.hackaton.business.backend.expose.customerDTO.CheckCustomerResponse;
 import com.hackaton.business.backend.repository.CustomerRepository;
-import com.hackaton.business.backend.repository.entity.Customer;
 import io.reactivex.Maybe;
-import io.reactivex.Single;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
@@ -24,7 +22,7 @@ public class CustomerImpl implements CustomerService{
     private final ModelMapper modelMapper;
 
     @Override
-    public Maybe<ResponseEntity<CheckCustomerResponse>> login(CheckCustomerRequest checkCustomerRequest) {
+    public Maybe<ResponseEntity<CheckCustomerResponse>> checkCustomer(CheckCustomerRequest checkCustomerRequest) {
         return Maybe
                 .fromCallable(() ->
                 customerRepository.findCustomerByDniAndPassword(checkCustomerRequest.getDni(), checkCustomerRequest.getPassword()))

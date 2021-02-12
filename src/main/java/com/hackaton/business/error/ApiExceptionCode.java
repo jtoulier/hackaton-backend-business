@@ -18,7 +18,11 @@ public enum ApiExceptionCode {
   /**
    * Customer not found api exception code.
    */
-  CREDIT_LINE_NOT_FOUND
+  CREDIT_LINE_NOT_FOUND,
+
+  NOT_AVAILABLE_CARD_FOUND,
+
+  NOT_ENOUGH_CREDIT_LINE,
 
 
 

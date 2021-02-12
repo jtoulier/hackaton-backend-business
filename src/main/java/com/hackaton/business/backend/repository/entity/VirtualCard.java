@@ -4,8 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
 
 @Entity
 @Getter
@@ -32,9 +30,12 @@ public class VirtualCard {
     private LocalDate expirationDate;
 
     @Column(name = "authorized_amount")
-    private String authorizedAmount;
+    private double authorizedAmount;
 
     @Column(name = "used_amount")
-    private String usedAmount;
+    private double usedAmount;
+
+    @Column(name = "cvv")
+    private String cvv;
 
 }

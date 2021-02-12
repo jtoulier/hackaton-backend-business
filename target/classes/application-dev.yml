@@ -9,6 +9,12 @@ application:
     CREDIT_LINE_NOT_FOUND:
       code: "ERROR-003"
       message: "Credit line not found"
+    NOT_AVAILABLE_CARD_FOUND:
+      code: "ERROR-004"
+      message: "Avaiable cards not found"
+    NOT_ENOUGH_CREDIT_LINE:
+      code: "ERROR-005"
+      message: "Customer's credit line is not enough"
   datasource:
     url: jdbc:sqlserver://serverhackaton01.database.windows.net:1433;database=hackatondb;sendStringParametersAsUnicode=false;
     username: hackaton

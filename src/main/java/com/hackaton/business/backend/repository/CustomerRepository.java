@@ -10,7 +10,7 @@ import java.util.Optional;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-    @Query(value = "SELECT c.* FROM customer c "
+    @Query(value = "SELECT c.* FROM group1.customer c "
             + "WHERE c.dni =:dni AND c.password =:password ", nativeQuery = true)
     Optional<Customer> findCustomerByDniAndPassword(String dni, String password);
 

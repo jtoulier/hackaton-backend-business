@@ -9,6 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface CustomerService {
 
-    Maybe<ResponseEntity<CheckCustomerResponse>> login(CheckCustomerRequest checkCustomerRequest);
+    Maybe<ResponseEntity<CheckCustomerResponse>> checkCustomer(CheckCustomerRequest checkCustomerRequest);
 
 }
